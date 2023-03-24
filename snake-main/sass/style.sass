@@ -1,0 +1,81 @@
+@import 'variables'
+
+* 
+    font-family: monospace
+    box-sizing: border-box
+
+=flex($sb, $ai, $ff)
+    display: flex
+    justify-content: $sb
+    align-items: $ai
+    flex-flow: $ff
+
+
+
+body
+    background: #000
+    color: $white
+    margin: 0
+    padding: 0
+    height: 100vh
+    +flex(space-between, center, column)    
+
+.container
+    margin: auto
+    width: 1200px
+    +flex(space-between, center, column)
+
+    
+
+.screen
+    width: 1024px
+    height: 740px
+    border: 2px solid $white
+    margin: auto
+    display: grid
+    column-gap: 3px
+    row-gap: 3px
+    padding: 3px
+
+.panel
+    +flex(space-evenly, center, row)
+    margin: auto 
+    width: 1024px
+
+.panel
+    button 
+        margin: 0
+
+button
+    color: $white
+    cursor: pointer
+    border: 2px solid $white
+    background: transparent
+    outline: none
+    padding: 10px 20px
+    margin-bottom: 50px
+
+.movement-description
+    width: 250px
+    +flex(space-between, start, column)
+
+.difficult-choice-form
+    width: 110px
+    +flex(space-between, start, column)
+.game-settings
+    width: 500px
+    +flex(space-between, start, row)
+
+.snake-tail
+    width: 100%
+    height: 100%
+    border: 3px solid $white
+
+.apple
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    margin: auto
+    border: 1px solid $white
+    background-color: $white
+
